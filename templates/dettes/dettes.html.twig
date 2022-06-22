@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Show All Dettes{% endblock %}
+
+{% block body %}
+	<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Montant</th>
+        <th scope="col">Gens</th>
+        </tr>
+    </thead>
+    <tbody> 
+    
+    {% for dette in dettes %}
+        <tr>
+        <td>{{ dette.id }}</td>
+        <td>{{ dette.montant }}</td>
+        <td>{{ dette.gensId }}</td>
+        <th scope="row">
+        </tr>
+    {% endfor %}
+    
+
+    </tbody>
+    </table>
+{% endblock %}

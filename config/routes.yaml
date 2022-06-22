@@ -1,3 +1,69 @@
-controllers:
-    resource: ../src/Controller/
-    type: attribute
+home:
+    path:   /
+    controller: App\Controller\HomeController::home
+
+# Club routes
+clubs:
+    path:   /clubs
+    controller: App\Controller\ClubsController::clubs
+
+postClub:
+    path:   /postClub
+    controller: App\Controller\ClubsController::postClub
+
+clubsById:
+    path:   /clubsById
+    controller: App\Controller\ClubsController::clubsById
+
+delClubById:
+    path:   /delClubById
+    controller: App\Controller\ClubsController::delClubById
+
+patchClubById:
+    path:   /patchClubById
+    controller: App\Controller\ClubsController::patchClubById
+
+
+# Gens routes
+gens:
+    path:   /gens
+    controller: App\Controller\GensController::gens
+
+postGens:
+    path:   /postGens
+    controller: App\Controller\GensController::postGens
+
+gensById:
+    path:   /gensById
+    controller: App\Controller\GensController::gensById
+
+delGensById:
+    path:   /delGensById
+    controller: App\Controller\GensController::delGensById
+
+patchGensById:
+    path:   /patchGensById
+    controller: App\Controller\GensController::patchGensById
+
+
+# Dettes routes
+
+dettes:
+    path:   /dettes
+    controller: App\Controller\DettesController::dettes
+
+postDettes:
+    path:   /postDettes
+    controller: App\Controller\DettesController::postDettes
+
+dettesById:
+    path:   /dettesById
+    controller: App\Controller\DettesController::dettesById
+
+delDettesById:
+    path:   /delDettesById
+    controller: App\Controller\DettesController::delDettesById
+
+patchDettesById:
+    path:   /patchDettesById
+    controller: App\Controller\DettesController::patchDettesById

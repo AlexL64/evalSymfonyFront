@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Endpoints</h1>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    GET : /api/v1/clubs<br>
+                    POST : /api/v1/clubs<br>
+                    GET : /api/v1/clubs/{id}<br>
+                    PUT : /api/v1/clubs/{id}<br>
+                    DELETE : /api/v1/clubs/{id}<br>
+                </p>
+
+                <p>
+                    GET : /api/v1/gens<br>
+                    POST : /api/v1/gens<br>
+                    GET : /api/v1/gens/{id}<br>
+                    PUT : /api/v1/gens/{id}<br>
+                    DELETE : /api/v1/gens/{id}<br>
+                </p>
+
+                <p>
+                    GET : /api/v1/dettes<br>
+                    POST : /api/v1/dettes<br>
+                    GET : /api/v1/dettes/{id}<br>
+                    PUT : /api/v1/dettes/{id}<br>
+                    DELETE : /api/v1/dettes/{id}<br>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

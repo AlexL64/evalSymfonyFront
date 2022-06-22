@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Show All Clubs{% endblock %}
+
+{% block body %}
+	<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Club</th>
+        <th scope="col">Dettes</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+        <td>{{ gens.id }}</td>
+        <td>{{ gens.nom }}</td>
+        <td>{{ gens.prenom }}</td>
+        <th scope="row">{{ gens.clubId }}</th>
+        <th scope="row">
+        {% for dette in gens.dettes %}
+            {{ dette }}
+        {% endfor %}
+        </th>
+        </tr>
+    </tbody>
+    </table>
+{% endblock %}

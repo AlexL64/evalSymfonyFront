@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Show All Clubs{% endblock %}
+
+{% block body %}
+	<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Monatnt</th>
+        <th scope="col">Gens</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+        <td>{{ dettes.id }}</td>
+        <td>{{ dettes.montant }}</td>
+        <td>{{ dettes.gensId }}</td>
+        </tr>
+    </tbody>
+    </table>
+{% endblock %}
